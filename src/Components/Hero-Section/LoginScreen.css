@@ -1,0 +1,36 @@
+/* LoginScreen.css */
+
+.login-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .login-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .login-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .login-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Square buttons */
+  .btn-outline-primary,
+  .btn-outline-secondary {
+    width: 100px;
+    height: 100px;
+    border-radius: 0 !important;
+    font-size: 18px;
+  }
+  

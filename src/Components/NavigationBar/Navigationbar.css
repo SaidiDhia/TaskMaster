@@ -1,0 +1,84 @@
+/* NavigationBar.css */
+
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0;
+  left: 0;
+  width: 100%; /* Set width to full screen */
+  height: auto; /* Auto height */
+  background-color: #ffffff; /* Change background color */
+  z-index: 1000; /* Set z-index to ensure it's on top of content */
+  padding: 10px; /* Add padding */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Center align items */
+  justify-content: flex-end; /* Move items to the right */
+}
+
+.navbar-nav li {
+  margin-left: 20px; /* Add margin between navbar items */
+}
+
+.navbar-nav li:first-child {
+  margin-left: auto; /* Push the first item to the right */
+}
+
+.navbar-nav li a {
+  text-align: center; /* Center align text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row !important; /* Force flex direction to be row */
+    justify-content: center !important; /* Center items horizontally */
+  }
+
+  .navbar-nav li {
+    margin-right: 10px; /* Adjust margin between navbar items */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .navbar-nav li a img {
+    width: 20px; /* Decrease icon width */
+  }
+
+  .navbar-nav li a {
+    font-size: 10px; /* Decrease font size */
+  }
+}
+
+/* Flip page animation effect */
+.navbar-nav {
+  perspective: 1200px; /* Adjust perspective to change the 3D effect */
+}
+
+.navbar-nav li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.navbar-nav li a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.navbar-nav li a.active {
+  transform: rotateY(360deg);
+}
+
+/* Navigationbar.css */
+
+.nav-link {
+  min-width: 100px; /* Adjust as needed */
+}

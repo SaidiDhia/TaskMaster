@@ -1,0 +1,14 @@
+.custom-button .btn {
+  background-color: #6a0dad; /* Purple */
+  border: 2px solid #6a0dad; /* Purple */
+  color: #fff; /* White */
+  padding: 15px 30px; /* Increase padding for bigger size */
+  font-size: 18px; /* Increase font size */
+  border-radius: 10px; /* Add border radius for a rounded appearance */
+}
+
+.custom-button .btn:hover {
+  background-color: #8e19ff; /* Lighter purple */
+  border: 2px solid #8e19ff; /* Lighter purple */
+  color: #fff; /* White */
+}
